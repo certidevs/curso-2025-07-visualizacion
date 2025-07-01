@@ -94,3 +94,20 @@ Matplotlib se puede usar de 3 formas diferentes:
     * df['total_bill'].plot.density()
     * df['total_bill'].plot.kde()
 
+* Boxplot: gráfico de caja, resumen de estadísticas
+    * df.boxplot()
+    * df.boxplot(column=['total_bill', 'tip'])
+    * df.boxplot(column='total_bill', by='day')
+    * df.plot.box(column='total_bill')
+    * Línea del medio es la mediana
+    * La caja: del 25 % al 75 % de los datos, osea el 50 % central
+    * Puntos sueltos: outliers o anómalos, es decir, valores muy extremos
+
+* Línea: gráfico de línea, ideal para series temporales, datos agrupados por fecha
+    * df['col1'].plot.line()
+
+* Barras:
+    * verticales: .plot.bar()
+    * horizontales: .plot.barh()
+    * Ideal para agrupaciones por categoría como conteo por categoría o suma por categoría
+    * CUIDADO: se suele agrupar para evitar crear una barra por cada registro lo cual es un problema.
