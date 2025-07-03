@@ -138,8 +138,21 @@ Matplotlib se puede usar de 3 formas diferentes:
     * df.groupby('day')[['tip']].sum()
 
 * Mapa de calor imshow en matplotlib
+    * cargar imágenes
+    * mapas de calor
+    * ilustrar correlación entre distintas variables
+    * La correlación es un número que va de -1 a 1 donde:
+        * -1 sería correlación negativa
+        * 0 no hay correlación
+        * 1 sería correlación positiva
+    * plt.imshow(df_encoded.corr(), cmap='viridis', vmin=-1, vmax=1)
+
+
 
 * Crear gráficos directamente con matplotlib usando plt
+    * plt.imshow
+    * plt.scatter
+    * plt.violinplot
 
 * Crear gráficos directamente con matplotlib con la api orientada a objetos
 
