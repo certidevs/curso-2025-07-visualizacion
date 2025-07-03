@@ -85,7 +85,7 @@ Matplotlib se puede usar de 3 formas diferentes:
     * ax.hist(hours, bins=5, edgecolor="black")
 
 
-* Histograma: muestra la distribución de UNA variable numérica dividia en bins. Permite ver rápidamente donde se concentran los datos.
+* Histograma: muestra la distribución de UNA variable numérica dividida en bins. Permite ver rápidamente donde se concentran los datos.
     * df.hist()
     * df['total_bill'].hist(bins=50)
 
@@ -111,3 +111,33 @@ Matplotlib se puede usar de 3 formas diferentes:
     * horizontales: .plot.barh()
     * Ideal para agrupaciones por categoría como conteo por categoría o suma por categoría
     * CUIDADO: se suele agrupar para evitar crear una barra por cada registro lo cual es un problema.
+
+* Pie chart (tarta)
+    * plt.plot.pie
+    * representar un todo, porcentajes con respecto al total
+    * df['time'].value_counts().plot.pie(autopct='%1.0f%%', startangle=90)
+
+* scatter (gráfico de puntos)
+    * Observar la relación entre dos variables 
+    * df.plot.scatter(x='total_bill', y='tip');
+    * df.plot.scatter(x='total_bill', y='tip', c='size', colormap='viridis');
+
+* area
+
+* Mapa de calor imshow en matplotlib
+
+* Crear gráficos directamente con matplotlib usando plt
+
+* Crear gráficos directamente con matplotlib con la api orientada a objetos
+
+* Combinar gráficos
+
+
+
+## RENDIMIENTO
+
+* Matplotlib y seaborn generan gráficos estáticos, es decir, son imágenes estáticas no interactivas por tanto se generan rápido ya que no cargan javascript.
+
+* Plotly: genera gráficos interactivos, que se puede hacer zoom, rotar, filtrar, cargan javascript por tanto son algo más lentos de generar.
+
+También depende el tipo de gráfico y la cantidad de filas que tengamos en el dataframe.
