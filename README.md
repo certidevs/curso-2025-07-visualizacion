@@ -103,7 +103,9 @@ Matplotlib se puede usar de 3 formas diferentes:
     * La caja: del 25 % al 75 % de los datos, osea el 50 % central
     * Puntos sueltos: outliers o anómalos, es decir, valores muy extremos
 
-* Línea: gráfico de línea, ideal para series temporales, datos agrupados por fecha
+* Línea: gráfico de línea
+    * evolución
+    * ideal para series temporales, datos agrupados por fecha
     * df['col1'].plot.line()
 
 * Barras:
@@ -122,7 +124,18 @@ Matplotlib se puede usar de 3 formas diferentes:
     * df.plot.scatter(x='total_bill', y='tip');
     * df.plot.scatter(x='total_bill', y='tip', c='size', colormap='viridis');
 
+* hexbin
+    * Muestra la concentración de puntos en forma de hexágonos, similar a scatter pero agrupando puntos en hexágonos
+    * df.plot.hexbin(x='total_bill', y='tip', cmap='Blues', gridsize=15);
+
 * area
+    * evolución acumulada o acumulativa
+    * el área debajo de la línea está rellena de un color
+    * ideal para consumos en plataformas de pago por uso como Azure, AWS, GCP, Digital Ocean, OpenIA
+    * consumo de facturas de electricidad o gas
+    * Gráficas de estadísticas de seguidores en Meta: IG, Threads etc con perfil de creador
+    * Gráficas de consumo de batería en android, en windows
+    * df.groupby('day')[['tip']].sum()
 
 * Mapa de calor imshow en matplotlib
 
@@ -132,7 +145,17 @@ Matplotlib se puede usar de 3 formas diferentes:
 
 * Combinar gráficos
 
+* Tablas pivotantes: son bastante útiles para agregar datos en función de varias categorías
+    * suma de propinas por día de la semana y si es fumador o no
+    * ventas medias por categoría de producto y por ciudad
+    * visitas a una web a lo largo de la semana y las horas del día como hace google analytics
+    * Opcionalmente: Sobre esta tabla resultante se puede crear un gráfico de área o de mapa de calor
 
+* Pasos previos para hacer gráficas:
+    * En ciertas ocasiones necesitaremos primero hacer un cálculo con Pandas como por ejemplo groupby o pivot_table para poder tener datos que pintar en un gráfico
+    * No obstante, librerías como seaborn son capaces de hacer esos cálculos de forma automática para no tener que hacerlos manualmente nosotros.
+    * También Microsoft Power BI hace automáticamente los cálculos y los muestra en gráficos
+    * Metabase también hace lo mismo que Power Bi y es open source
 
 ## RENDIMIENTO
 
