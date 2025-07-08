@@ -179,8 +179,54 @@ Matplotlib se puede usar de 3 formas diferentes:
 
 ## SEABORN
 
-pip install seaborn
+* Instalación: pip install seaborn
 
+
+Biblioteca que utiliza matplotlib por debajo. 
+
+Se suele utilizar con dataframes de pandas.
+
+* Matplotlib se suele utilizar con arrays de numpy y con Series de pandas (columnas)
+* Seaborn se suele utilizar con dataframes de pandas, admite el dataframe completo como parámetro de entrada
+* Seaborn es más alto nivel, más intuitivo cuando se trabaja con dataframes de pandas
+* Seaborn calcula estadísticas y agrupaciones automáticamente
+* Estética más moderna, elegante, completa
+* Menos código y más funcionalidad con menos código
+* Parámetro hue: colorea los datos en base a una categoría
+
+* Seaborn tiene las mismas gráficas que matplotlib pero incluso más
+
+Tipos de gráficos habituales en seaborn:
+
+* https://seaborn.pydata.org/api.html
+
+- seaborn.relplot
+- seaborn.scatterplot --> grafico de dispersión
+- seaborn.lineplot
+- seaborn.displot
+- seaborn.histplot --> histograma
+- seaborn.kdeplot --> curva de densidad https://seaborn.pydata.org/generated/seaborn.kdeplot.html
+- seaborn.ecdfplot
+- seaborn.rugplot --> alfombra se suele combinar con kdeplot
+- seaborn.distplot
+- seaborn.catplot
+- seaborn.stripplot
+- seaborn.swarmplot
+- seaborn.boxplot --> gráfico de cajas
+- seaborn.violinplot --> gráfico de violin
+- seaborn.boxenplot
+- seaborn.pointplot
+- seaborn.barplot
+- seaborn.countplot --> gráfico de conteo para columnas categóricas
+- seaborn.lmplot
+- seaborn.regplot
+- seaborn.residplot
+- seaborn.heatmap --> mapa de calor para pintar matriz de correlación o tabla pivotante
+- seaborn.clustermap --> mapa de calor para clusters
+- seaborn.FacetGrid
+- seaborn.pairplot --> calcula automáticamente histogramas y scatterplots para cada par de columnas
+- seaborn.PairGrid
+- seaborn.jointplot
 
 
 
