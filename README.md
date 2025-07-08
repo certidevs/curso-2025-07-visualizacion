@@ -67,7 +67,7 @@ Importarlo:
 import pandas as pd
 ```
 
-## TIPOS DE VISUALIZACIÓN HABITUALES
+## MATPLOTLIB: TIPOS DE VISUALIZACIÓN HABITUALES
 
 https://python-graph-gallery.com/
 
@@ -147,6 +147,12 @@ Matplotlib se puede usar de 3 formas diferentes:
         * 1 sería correlación positiva
     * plt.imshow(df_encoded.corr(), cmap='viridis', vmin=-1, vmax=1)
 
+* Combinar gráficos
+    * Combinar diferentes gráficos en una misma visualización
+    * Para comparar datos cambiando una variable para ver diferencias
+    * plt.subplots
+
+
 
 
 * Crear gráficos directamente con matplotlib usando plt
@@ -156,7 +162,7 @@ Matplotlib se puede usar de 3 formas diferentes:
 
 * Crear gráficos directamente con matplotlib con la api orientada a objetos
 
-* Combinar gráficos
+
 
 * Tablas pivotantes: son bastante útiles para agregar datos en función de varias categorías
     * suma de propinas por día de la semana y si es fumador o no
@@ -169,6 +175,14 @@ Matplotlib se puede usar de 3 formas diferentes:
     * No obstante, librerías como seaborn son capaces de hacer esos cálculos de forma automática para no tener que hacerlos manualmente nosotros.
     * También Microsoft Power BI hace automáticamente los cálculos y los muestra en gráficos
     * Metabase también hace lo mismo que Power Bi y es open source
+
+
+## SEABORN
+
+pip install seaborn
+
+
+
 
 ## RENDIMIENTO
 
