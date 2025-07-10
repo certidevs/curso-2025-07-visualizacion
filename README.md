@@ -228,6 +228,43 @@ Tipos de gráficos habituales en seaborn:
 - seaborn.PairGrid
 - seaborn.jointplot
 
+* Gráficos básicos (una sola variable)
+    * histplot
+    * kdeplot
+    * countplot
+
+* Comparar grupos, misma variable, diferentes categorías
+    * histplot(hue='survived')
+    * kdeplot(hue='survived')
+
+* Gráficos de cajas (muestra estadísticas)
+    * boxplot
+    * violinplot
+
+* Gráficos de puntos 
+    * stripplot
+    * swarmplot
+
+* Gráficos de relación (dos variables numéricas)
+    * scatterplot
+
+* Gráficos de tendencias
+    * regplot
+    * lineplot
+
+* Mapas de calor
+    * heatmap (equivalente a imgshow de matplotlib)
+    * clustermap
+
+* Gráficos avanzados en múltiples paneles
+    * relplot: scatterplot separado por categorías
+    * displot: histograma separado por categorías
+    * catplot: cualquier tipo de gráfico pero separado por categorías
+    * pairplot: generación automática de gráficos por pares
+    * jointplot: relación entre dos variables + sus distribuciones individuales
+
+
+
 
 
 ## RENDIMIENTO
