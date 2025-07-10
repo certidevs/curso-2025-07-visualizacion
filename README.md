@@ -264,7 +264,9 @@ Tipos de gráficos habituales en seaborn:
     * jointplot: relación entre dos variables + sus distribuciones individuales
 
 
+## PLOTLY
 
+Librería interactiva que renderiza con JavaScript para hacer gráficos interactivos con zoom y rotación
 
 
 ## RENDIMIENTO
